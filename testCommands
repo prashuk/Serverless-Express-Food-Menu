@@ -1,0 +1,30 @@
+# adding ingredients
+curl -H "Content-Type: application/json" -X PUT http://localhost:15001/add-ingredients -d '{
+  "abelmosk": {
+    "text": "abelmosk",
+    "tags": {
+      "SPICE_HERB": 1
+    }
+  },
+  "absinthe wormwood": {
+    "text": "absinthe wormwood",
+    "tags": {
+      "SPICE_HERB": 1,
+	    "test_tag": 2
+    }
+  }
+}'
+
+# getting ingredients
+curl -H "Content-Type: application/json" -X GET http://localhost:15001/ingredients/abelmosk
+curl -H "Content-Type: application/json" -X GET http://localhost:15001/ingredients/absinthe%20wormwood
+
+# adding ingredients from database.json
+curl -H "Content-Type: application/json" -X PUT http://localhost:15001/add-ingredients -d @./database/database.json
+curl -H "Content-Type: application/json" -X GET http://localhost:15001/ingredients/ajwain
+
+# getting ingredients for fuzzy search - hashKey
+curl -H "Content-Type: application/json" -X GET http://localhost:15001/fuzzy-search-hash/abélmosk
+
+# getting ingredients for fuzzy search - variations
+curl -H "Content-Type: application/json" -X GET http://localhost:15001/fuzzy-search-variation/abelmosks

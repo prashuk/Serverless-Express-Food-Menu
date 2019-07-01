@@ -1,0 +1,38 @@
+{
+  "name": "food_menu-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel app.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.485.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "serverless-http": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bulma": "^0.7.4",
+    "parcel": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "serverless-dynamodb-local": "^0.2.37",
+    "serverless-offline": "^4.10.6"
+  },
+  "description": "## Introduction",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashuk/food_menu-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prashuk/food_menu-backend/issues"
+  },
+  "homepage": "https://github.com/prashuk/food_menu-backend#readme"
+}
