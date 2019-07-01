@@ -31,7 +31,7 @@ You should see the "Hello World!". That confirms that you have set up everything
 
 ### Install serverless-offline plugin
 
-    npm install --save-dev serverless-offline
+    sudo npm install --save-dev serverless-offline
     
 ### Install DynamoDB local
 
