@@ -48,7 +48,7 @@ Open up your browser and head over to:
 
 You should see the "Hello World!". That confirms that you have set up everything successfully.
 
-### Create User and test
+### Create user and test
 Open another terminal window and hit
 
     curl -H "Content-Type: application/json" -X POST ${BASE_DOMAIN}/users -d '{"userId": "alexdebrie1", "name": "Alex DeBrie"}'
