@@ -24,7 +24,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "serverless-dynamodb-local": "^0.2.37",
-    "serverless-offline": "^4.10.6"
+    "serverless-offline": "^12.0.3"
   },
   "description": "## Introduction",
   "repository": {
